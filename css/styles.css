@@ -83,7 +83,7 @@ blockquote {
  blockquote{
     height: 600px;
   }
-  footer{
+  #footerSize {
     font-size: 2.6em;
   }
   .lead {
