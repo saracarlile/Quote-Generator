@@ -81,10 +81,10 @@ blockquote {
     font-size: 2.5em;
    }
  blockquote{
-    font-size: 3.3em;
+    height: 600px;
   }
   .lead {
-     font-size: 3.3em;
+     font-size: 3em;
   }
   .social {
     font-size: 2.5em;
