@@ -83,17 +83,24 @@ blockquote {
  blockquote{
     height: 600px;
   }
+  footer{
+    font-size: 2.6em;
+  }
   .lead {
      font-size: 3em;
   }
-  .fa {
-  font-size: 3em;
-}
   #btnClick {
     font-size: 2.5em;
   }
   .quote-display {
     height: 700px;
+  }
+
+  #tweetSize {
+     font-size: 2.5em;
+  }
+  #fbSize {
+     font-size: 2.5em;
   }
 }
 
