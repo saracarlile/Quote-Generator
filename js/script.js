@@ -25,9 +25,4 @@ function modifyText() {
 }
 
 //http://viratgaywala.blogspot.in/2014/05/how-to-create-facebook-app-for-website.html
-//http://viratgaywala.blogspot.com/search?q=share+button+facebook
 
-/*rgb 255, 252, 197
-rgb 127, 126 106
-rgb 127, 127, 113
-rgb 204, 202, 170*/
