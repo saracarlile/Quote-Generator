@@ -87,6 +87,10 @@ e.src = document.location.protocol +
 document.getElementById('fb-root').appendChild(e);
 }());
 
+var myDescription = "Description of Page";
+var myMessage = "Message in Page"; 
+
+
 $(document).ready(function(){
 $('#fbMe').click(function(e){
 e.preventDefault();
@@ -95,8 +99,8 @@ FB.ui(
 method: 'feed',
 name: 'Quote Generator',
 link: 'https://saracarlile.github.io/Quote-Generator/',
-description: 'Description',
-message: 'message'
+description: myDescription,
+message: myMessage
 });
 });
 });
