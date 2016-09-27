@@ -20,30 +20,6 @@
 </head>
 
 <body class="color">
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '928578273952919',
-      xfbml      : true,
-      version    : 'v2.7'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-  <div class="container-fluid">
-      <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
     <div class="row">
       <div class="fallingLeaves">
         
@@ -98,5 +74,34 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   <script src="https://platform.twitter.com/widgets.js"></script>
   <script src="js/script.js"></script>
+  <div id="fb-root"></div>
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.init({appId: '928578273952919', status: true, cookie: true,
+xfbml: true});
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+
+$(document).ready(function(){
+$('#fbMe').click(function(e){
+e.preventDefault();
+FB.ui(
+{
+method: 'feed',
+name: 'Quote Generator',
+link: 'https://saracarlile.github.io/Quote-Generator/',
+picture: ‘http://www.groupstudy.in/img/logo3.jpeg’,
+caption: 'Quotes from Henry David Thoreau',
+description: 'Description',
+message: 'message'
+});
+});
+});
+</script>
 </body>
 </html>
