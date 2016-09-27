@@ -97,7 +97,7 @@ $('#fbMe').click(function(e){
 e.preventDefault();
 
 var str = document.getElementById('quote').textContent;
-myDescription = ""\"+ str + "\"";
+myDescription = str;
 FB.ui(
 {
 method: 'feed',
