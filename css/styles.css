@@ -64,6 +64,9 @@ blockquote {
   .fallingLeaves span {
     display: none;
   }
+}
+
+@media only screen and (max-width: 800px) {
   h1 {
     font-size: 4em;
   }
@@ -74,6 +77,7 @@ blockquote {
     font-size: 3.3em;
   }
 }
+
 
 .fallingLeaves span {
   display: inline-block;
