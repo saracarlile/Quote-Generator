@@ -88,13 +88,16 @@ e.src = document.location.protocol +
 document.getElementById('fb-root').appendChild(e);
 }());
 
-var myDescription = "\"An early-morning walk is a blessing for the whole day.\"";
+var myDescription = "An early-morning walk is a blessing for the whole day.";
 var myMessage = "Message in Page"; 
 
 
 $(document).ready(function(){
 $('#fbMe').click(function(e){
 e.preventDefault();
+
+var str = document.getElementById('quote').textContent;
+myDescription = ""\"+ str + "\"";
 FB.ui(
 {
 method: 'feed',
